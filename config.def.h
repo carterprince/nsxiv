@@ -182,8 +182,7 @@ static const keymap_t keys[] = {
 /* mouse button mappings for image mode: */
 static const button_t buttons_img[] = {
 	/* modifiers    button            function              argument */
-	{ 0,            1,                i_cursor_navigate,    None },
-	{ ControlMask,  1,                i_drag,               DRAG_RELATIVE },
+	{ 0,  			1,                i_drag,               DRAG_RELATIVE },
 	{ 0,            2,                i_drag,               DRAG_ABSOLUTE },
 	{ 0,            3,                g_switch_mode,        None },
 	{ 0,            4,                g_zoom,               +1 },
@@ -204,7 +203,7 @@ static const button_t buttons_tns[] = {
 /* true means NAV_WIDTH is relative (33%), false means absolute (33 pixels) */
 static const bool NAV_IS_REL = true;
 /* width of navigation area, 0 disables cursor navigation, */
-static const unsigned int NAV_WIDTH = 33;
+static const unsigned int NAV_WIDTH = 0;
 
 /* mouse cursor on left, middle and right part of the window */
 static const cursor_t imgcursor[3] = {

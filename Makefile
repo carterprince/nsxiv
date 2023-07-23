@@ -59,7 +59,7 @@ dump_cppflags:
 	@echo $(nsxiv_cppflags)
 
 clean:
-	rm -f *.o nsxiv version.h
+	rm -f *.o nsxiv version.h config.h
 
 install-all: install install-desktop install-icon
 
