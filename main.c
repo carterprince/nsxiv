@@ -365,8 +365,8 @@ void load_image(int new)
 	if (new < 0 || new >= filecnt)
 		return;
 
-	if (win.xwin != None)
-		win_set_cursor(&win, CURSOR_WATCH);
+	//if (win.xwin != None)
+		//win_set_cursor(&win, CURSOR_WATCH);
 	reset_timeout(slideshow);
 
 	if (new != current)
